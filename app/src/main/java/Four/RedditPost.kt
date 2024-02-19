@@ -25,7 +25,7 @@ class RedditPost( val author: String, val title: String): Comparable<RedditPost>
         return upVotes and downVotes
     }
 
-    // Using the compareTo method to I can compare same type objects initialized by RedditPost:
+    // using the compareTo method to I can compare same type objects initialized by RedditPost:
     override fun compareTo(other: RedditPost): Int {
         val firstPost = this.upVotes - this.downVotes;
        println(firstPost)
