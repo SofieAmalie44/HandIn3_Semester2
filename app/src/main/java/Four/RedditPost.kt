@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat
 import java.util.Date
 
 // Creating the class: RedditPost and giving it two parameters in the contractor
-class RedditPost(val author: String, val title: String): Comparable<RedditPost> {
+class RedditPost( val author: String, val title: String): Comparable<RedditPost> {
     // also found that the kotlin interface Comparable can be used to compare the instances of RedditPost objects.
 
     // Making sure to make all the attributes are private:

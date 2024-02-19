@@ -26,4 +26,20 @@ fun main() {
     // then I print the list to one object at a time in a descending order based on the upVote/downVote balance:
     sortingListOfPost.forEach { println(it) }
 
+
+    // 4.5
+    // first I'll initialize the class RedditFrontPage:
+    val listThePosts = RedditFrontPage()
+
+    // Using the add post method I'll add the new posts using the RedditPost constructor:
+    listThePosts.addRedditPost(RedditPost("Harry", "Wingardium Leviosa"))
+    listThePosts.addRedditPost(RedditPost("Ron", "Expecto Patronum"))
+
+    //using the method to delete a post on index 0
+    listThePosts.deleteARedditPost(0);
+
+    // then i use the viewAllPosts method to vies all the posts not in the front page:
+    listThePosts.viewAllPosts()
+
+
 }
