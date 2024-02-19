@@ -19,11 +19,10 @@ fun main() {
 
     // Inserting all the objects into a list using the class RedditPost to implement it:
     val listOfPosts: List<RedditPost> = listOf(post1, post2, post3, post4);
-    println("Before: ")
-    listOfPosts.forEach { println(it) }
+
     // now I'll sort the list in a descending order to see what post has most upVote/downVote balance:
     val sortingListOfPost = listOfPosts.sortedDescending()
-    println("After: ")
+
     // then I print the list to one object at a time in a descending order based on the upVote/downVote balance:
     sortingListOfPost.forEach { println(it) }
 
